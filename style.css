@@ -1,0 +1,230 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    height: 100vh;
+    background-color: #07252d;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.navbarindexbg{
+    background: linear-gradient(rgba(255,255,255,0.15),rgba(255,255,255,0.35));
+}
+
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+#index_header{
+    overflow: auto;
+}
+
+/*index page animation*/
+
+#index_text{
+    position: relative;
+    padding-top: 25%;
+    font-size: 5em;
+    letter-spacing: 15px;
+    color: #0e3742;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    -webkit-box-reflect: below 1px linear-gradient( transparent,#0008);
+    line-height: 0.70em;
+    outline: none;
+    animation: animate 5s linear infinite; 
+}
+
+@keyframes animate {
+    0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%
+    {
+        color: #0e3742;
+        text-shadow: none;
+    }
+    
+    18.1%,20.1%,30%,60.1%,65%,80.1%,90%,92.1%,100%
+    {
+        color: #fff;
+        text-shadow: 0 0 10px #03bcf4,
+        0 0 20px #03bcf4,
+        0 0 40px #03bcf4,
+        0 0 80px #03bcf4,
+        0 0 100px #03bcf4;
+
+    }
+}
+
+
+/*skill page animation*/
+
+.wrapper{
+    display: inline-flex;
+}
+
+.wrapper .static_text{
+    color: #fff;
+    font-size: 40px;
+    font-weight: 400;
+    padding-left: 25px;
+    padding-top: 2.1px;
+}
+
+.wrapper .dynamic_text{
+    margin-left: 15px;
+    height: 65px;
+    line-height: 65px;
+    padding: 0;
+    overflow: hidden;
+    margin-left: 10px;
+}
+
+.dynamic_text li{
+    color: #fc6060;
+    list-style: none;
+    font-size: 40px;
+    font-weight: 500;
+    position: relative;
+    top: 0;
+    animation: slide 7.5s steps(5) infinite; /*steps = number of words*/
+}
+
+@keyframes slide {
+    100%{
+        top: -320px;
+    }
+    
+}
+
+    
+}
+.dynamic_text li span{
+    position: relative;
+}
+.dynamic_text li span:after{
+    content: "";
+    position: absolute;
+    padding: ;
+    left: 0;
+    height: 120%;
+    width: 100%;
+    background: #03071e;
+    border-left: 2px solid #fc6060;
+    animation: typing 1.5s steps(10) infinite; /*step = number of letter in the large word*/
+}
+
+@keyframes typing {
+    100%{
+        left: 100%;
+        margin: 0 -35px 0 35px;
+    }
+    
+}
+
+
+
+
+/*skill page*/
+
+.navbarskillbg{
+    background: linear-gradient(rgba(255,255,255,0.15),rgba(255,255,255,0.35));
+}
+
+
+
+#skillheader{
+    height: 100vh;
+    background-color: #03071e;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.skill_slider_image_heading{
+    text-shadow: 5px 7px #2c1717;
+    font-size: 90px;
+    font-style: oblique;
+    text-transform: uppercase;
+}
+
+.skill_slider_desciption{
+    text-shadow: 2px 2px #2c1717;
+    font-size: 25px;
+    font-feature-settings: "aalt";
+    background: rgba(0,0,0,0.75);
+    margin: 0;
+    padding: 0;
+    border-radius: 5%;
+}
+
+
+/*PROJECT PAGE*/
+
+.navbarprojectbg{
+
+    background: linear-gradient(rgba(0,0,0,0.15),rgba(119, 114, 168, 0.65));
+}
+}
+
+.projects_shadow{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-transform: capitalize;
+}
+
+.projects_shadow:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.30);
+  }
+
+/*contact me page*/
+
+.con_link{
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.con_link:hover{
+    color: #fff;
+    font-weight: bold;
+    text-decoration:double;
+}
+
+.con_header{
+        background-image: url("contact banner.jpg");
+}
+
+/*contact QR codes*/
+
+#con_header{
+    overflow: auto;
+}
+
+.social_qr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow:inherit;
+}
+
+.card_con{
+    padding: 20px;
+    margin: 15px;
+}
+
+.card_con:hover{
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.6), 0 6px 20px 0 rgba(255, 255, 255, 0.30);
+    background-color: #d6dae0;
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin: 3%;
+}
+
