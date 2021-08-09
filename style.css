@@ -220,6 +220,22 @@ section{
     margin: 15px;
 }
 
+
+
+/*EDUCATION*/
+
+.navbareducationbg{
+    background-color: #03071e;
+}
+
+.eduimg{
+    height: 85vh;
+    border: 2px solid rgb(80, 64, 64);
+    border-radius: 5%;
+    
+}
+
+
 .card_con:hover{
     box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.6), 0 6px 20px 0 rgba(255, 255, 255, 0.30);
     background-color: #d6dae0;
